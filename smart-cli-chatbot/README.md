@@ -2,9 +2,9 @@
 
 > A multi-turn terminal chatbot powered by Claude (Anthropic API) with persona switching, token tracking, and conversation memory — built as part of my Generative AI learning journey.
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python)
-![Anthropic](https://img.shields.io/badge/Anthropic-Claude%20API-orange?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python)](https://www.python.org/)
+[![Anthropic](https://img.shields.io/badge/Anthropic-Claude%20API-orange?style=flat-square)](https://platform.claude.com/docs/en/home)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/OlawoyeTaofeek/Zero-to-AI-engineer/blob/main/LICENSE)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
 
 ---
@@ -68,6 +68,10 @@ You: How do I reverse a list in Python?
 │  Total tokens   1202│
 ╰────────────────────╯
 ```
+
+
+![Example Chatbot Conversation](image.png)
+
 
 ---
 
@@ -344,4 +348,4 @@ MIT — free to use, fork, and build on.
 
 ---
 
-*Part of my [Generative AI Portfolio](https://github.com/YOUR_USERNAME) — documenting the journey from zero to AI engineer.*
+*Part of my [Zero-to-AI-engineer](https://github.com/OlawoyeTaofeek/Zero-to-AI-engineer/tree/main) — documenting the journey from zero to AI engineer.*
