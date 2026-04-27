@@ -6,18 +6,15 @@ from rich.panel import Panel
 from rich.text import Text
 from rich.prompt import Prompt
 from rich.table import Table
-<<<<<<< HEAD
+
 from personas import PERSONAS, choose_persona
 from model import OpenAIAPI
 from tracker import TokenTracker, handle_command
-=======
-from personas import PERSONAS
->>>>>>> 50f201a2674d39ec69d9734bdd39453eb6bd3f36
 
+from personas import PERSONAS
 load_dotenv()
 
 console = Console()
-<<<<<<< HEAD
 
 openai_api = OpenAIAPI()
 
@@ -68,6 +65,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
-client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
->>>>>>> 50f201a2674d39ec69d9734bdd39453eb6bd3f36
+

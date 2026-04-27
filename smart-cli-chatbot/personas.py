@@ -1,11 +1,9 @@
 # personas.py
-<<<<<<< HEAD
 from rich.console import Console
 from rich.prompt import Prompt
 
 console = Console()
-=======
->>>>>>> 50f201a2674d39ec69d9734bdd39453eb6bd3f36
+
 
 PERSONAS = {
     "default": {
@@ -35,7 +33,7 @@ PERSONAS = {
             "to the answer through thoughtful questions. Be curious and encouraging."
         )
     }
-<<<<<<< HEAD
+
 }
 
 # ── Persona selector ───────────────────────────────────────
@@ -51,6 +49,3 @@ def choose_persona() -> dict:
         default="default"
     )
     return PERSONAS[choice]
-=======
-}
->>>>>>> 50f201a2674d39ec69d9734bdd39453eb6bd3f36
