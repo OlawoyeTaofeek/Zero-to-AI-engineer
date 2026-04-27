@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-import openai
+from openai import OpenAI
 from typing import List, Dict, Optional
 
 load_dotenv()
@@ -11,7 +11,7 @@ class OpenAIAPI:
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY not found in environment variables")
         
-        self.client = openai.OpenAI(api_key=self.api_key)
+        self.client = OpenAI(api_key=self.api_key)
         self.default_model = "gpt-4o"  # gpt-5 doesn't exist yet
 
     def generate_response(
