@@ -9,4 +9,5 @@ dependencies = [
     "openai>=2.32.0",
     "pydantic-settings>=2.14.0",
     "rich[jupyter]>=15.0.0",
+    "streamlit>=1.56.0",
 ]

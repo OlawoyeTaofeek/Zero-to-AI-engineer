@@ -58,9 +58,9 @@ class TokenTracker:
 
         table.add_row("Total Turns", str(self.turns))
         table.add_row("Input Tokens", f"{self.total_input:,}")
-        table.add_row("Output Tokens", f"{self.total_ouput:,}")
-        table.add_row("Total Tokens", f"{self.total_input + self.total_ouput:,}")
-        table.add_row("Estimated Cost", f"${(self.total_input / 1_000_000) * 3.00 + (self.total_ouput / 1_000_000) * 15.00:.6f}")
+        table.add_row("Output Tokens", f"{self.total_output:,}")
+        table.add_row("Total Tokens", f"{self.total_input + self.total_output:,}")
+        table.add_row("Estimated Cost", f"${(self.total_input / 1_000_000) * 3.00 + (self.total_output / 1_000_000) * 15.00:.6f}")
         console.print(Panel(table, title="[dim]Session stats[/dim]", border_style="dim"))
 
         # Also display cost
@@ -80,6 +80,9 @@ def handle_command(cmd: str, tracker: TokenTracker, messages:List) -> bool:
     
     elif cmd == "/stats":
         tracker.display_stats()
+
+    elif cmd == '/stats_table':
+        tracker.display()
 
     elif cmd == "/cost":
         tracker.display_cost()
